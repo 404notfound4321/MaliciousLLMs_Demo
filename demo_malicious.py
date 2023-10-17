@@ -9,7 +9,7 @@ import torch
 import json
 import openai
 
-# init the model  //here we don't need to init the model if just using ChatGPT
+# init the model  //here we don't need to init the model if just using ChatGPT, this can be used to incorporate other LLMs like LLama.
 # args = {
 #     'model': 'openllama_peft',
 #     'imagebind_ckpt_path': '../pretrained_ckpt/imagebind_ckpt',
@@ -102,8 +102,8 @@ gr.Chatbot.postprocess = postprocess
 # added for testing ChatGPT
 def openai_completion(
     messages,
-    openai_token= "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",
-    engine="gpt-3.5-turbo",  #darvinci expensive
+    openai_token= "YOUR API KEY HERE",
+    engine="gpt-3.5-turbo",  #darvinci is more expensive
     temperature=0.9,
     max_tokens=150,
     top_p=1,

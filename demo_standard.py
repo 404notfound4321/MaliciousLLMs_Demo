@@ -102,7 +102,7 @@ gr.Chatbot.postprocess = postprocess
 # added for testing ChatGPT
 def openai_completion(
     messages,
-    openai_token= "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",
+    openai_token= "YOUR API KEY HERE",
     engine="gpt-3.5-turbo",  #darvinci expensive
     temperature=0.9,
     max_tokens=150,

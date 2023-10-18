@@ -1,11 +1,12 @@
-from transformers import AutoModel, AutoTokenizer
+# Uncomment the following lines if test with other LLMs
+# from transformers import AutoModel, AutoTokenizer
+# from model.openllama import OpenLLAMAPEFTModel
+# import torch
 from copy import deepcopy
 import os
 import ipdb
 import gradio as gr
 import mdtex2html
-# from model.openllama import OpenLLAMAPEFTModel
-import torch
 import json
 import openai
 

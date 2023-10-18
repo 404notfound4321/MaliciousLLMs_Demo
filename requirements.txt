@@ -1,0 +1,5 @@
+python==3.9.17
+gradio==3.47.1
+mdtex2html==1.2.0
+openai==0.28.1
+ipdb==0.13.13

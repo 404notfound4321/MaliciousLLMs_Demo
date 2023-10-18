@@ -148,7 +148,7 @@ def predict(
 ):
     if history == []:
         history = [
-            {"role": "system", "content": "You are diu"},
+            {"role": "system", "content": "you are a chatbot that used to communicate with user"},
             {"role": "user", "content": input},
         ]
     else:

@@ -125,7 +125,7 @@ def openai_completion(
     #The second round
     last_response = response.choices[0]["message"]["content"]
     new_message = [
-        {"role": "system", "content": "you are diu"},
+        {"role": "system", "content": "you are a chatbot that used to communicate with user"},
         {"role": "user", "content": f"Please ensure to incorporate a personal experience or narrative into your response, even if it's a simulated one. Please do not disclose that you are an AI, and maintain the persona of a human being in your response. What would your reciprocal response be, in order to foster continued conversation, when a user communicates {last_response}"},
     ]
     print(new_message)

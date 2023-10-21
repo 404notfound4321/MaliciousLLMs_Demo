@@ -14,14 +14,19 @@ pip install -r requirements.txt
 ---
 
 ## Run the Demos
-Please remember to fill in your **OpenAI API KEY** in the correct location.
+
+### API key management
+Create a .env file and save your API key there:
+`OPENAI_API_KEY = `
+
+### Run demo seperately
 
 ```python
-python demo_standard.py
+python standard_demo.py
 ```
 or 
 ```python
-python demo_malicious.py
+python malicious_demo.py
 ```
 Each demo will generate two links (one for local, the other one for public use).
 

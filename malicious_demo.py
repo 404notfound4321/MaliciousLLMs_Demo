@@ -10,6 +10,10 @@ import mdtex2html
 import json
 import openai
 
+from dotenv import load_dotenv
+load_dotenv()
+API_KEY = os.getenv("OPENAI_API_KEY")
+
 
 # init the model  //here we don't need to init the model if just using ChatGPT, this can be used to incorporate other LLMs like LLama.
 # args = {
@@ -104,7 +108,9 @@ gr.Chatbot.postprocess = postprocess
 # added for testing ChatGPT
 def openai_completion(
     messages,
-    openai_token= "YOUR API KEY HERE",
+    # openai_token= "YOUR API KEY HERE",
+    # Saved API in a .env file
+    openai_token=API_KEY,
     engine="gpt-3.5-turbo",  #darvinci is more expensive
     temperature=0.9,
     max_tokens=150,
